@@ -10,7 +10,7 @@ import java.net.http.HttpResponse;
 @Service
 public class EmailService {
 
-    private final String API_KEY = "xsmtpsib-e877aca748e8ef446b90c5807bb5f89bcf484e2319f5e3df6a0b3d4d2fb8416c-vf5x2aWBepLipr7L";
+	private final String API_KEY = System.getenv("BREVO_API_KEY");
     private final String FROM_EMAIL = "sawangautam7825@gmail.com";
     private final String FROM_NAME = "Rozgaar Mittar";
 
