@@ -7,10 +7,12 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+
 @Service
 public class EmailService {
 
-	private final String API_KEY = System.getenv("BREVO_API_KEY");
+	@Value("${BREVO_API_KEY}")
+	private String API_KEY;
     private final String FROM_EMAIL = "sawangautam7825@gmail.com";
     private final String FROM_NAME = "Rozgaar Mittar";
 
